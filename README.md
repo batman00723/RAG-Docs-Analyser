@@ -21,14 +21,11 @@ RAG backend, featuring multi-stage retrieval and advanced re-ranking architectur
 | **Vector DB** | PostgreSQL + pgvector | Relational data integrity with high-performance vector similarity. |
 | **Embeddings** | Gemini-001 | High-dimensional semantic mapping. |
 | **Re-ranker** | Voyage AI | Optimised for pinpointing relevance in large context windows. |
-| **Framework** | Django Ninja | Djago ninja for |
+| **Framework** | Django Ninja | Django ninja Fasapai like validation schema and django orm.  |
 
 ---
 
-## 📐 Architecture Flow
-┌─────────────────────────────────────────────────────────────────────────┐
-│                         RAG BOT ARCHITECTURE                            │
-└─────────────────────────────────────────────────────────────────────────┘
+## 📐 Architecture Diagram Flow
 
              DATA INGESTION LAYER(Parsing -> Chunking -> Embedding -> Vector Db storage is donw by Redis and Celery (Background Workers))
                       │        
