@@ -1,4 +1,1 @@
-﻿# AGENTIC RAG BOT
-
- ## will add a proper readme file when project will be completed
- # ONGOING PROJECT
+![Basic RAG Agent Architecture](Basic%20RAG%20Agent%20Sequential.png)
