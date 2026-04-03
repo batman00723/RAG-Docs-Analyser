@@ -9,7 +9,7 @@ graph TD
     A[User Query] --> B[Reformulate Query Node]
     B --> C[Retrieve Local DB]
     C --> D[Generate Node]
-    D --> E{Grader Logic (Gemini + Custom hardcoded)}
+    D --> E{Grader Logic and hardcoded}
     E -- "Insufficient" --> F[Web Search Node]
     F --> D
     E -- "Sufficient" --> G[Final Response]
