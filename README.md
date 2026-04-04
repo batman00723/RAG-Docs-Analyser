@@ -1,4 +1,4 @@
-# RAG based Document Chatbot
+# RAG-based Document Chatbot
 
 RAG backend, featuring multi-stage retrieval and advanced re-ranking architectures.
 
@@ -13,7 +13,7 @@ RAG backend, featuring multi-stage retrieval and advanced re-ranking architectur
 
 ---
 
-## 🛠️ The Tech Stack
+## Tech Stack
 
 | Layer | Technology | Rationale |
 | :--- | :--- | :--- |
@@ -25,9 +25,9 @@ RAG backend, featuring multi-stage retrieval and advanced re-ranking architectur
 
 ---
 
-## 📐 Architecture Diagram Flow
+## Architecture Diagram Flow
 
-             DATA INGESTION LAYER(Parsing -> Chunking -> Embedding -> Vector Db storage is donw by Redis and Celery (Background Workers))
+             DATA INGESTION LAYER(Parsing -> Chunking -> Embedding -> Vector DB storage is done by Redis and Celery (Background Workers))
                       │        
         ┌──────────────┬───────────┼
         │              │           │     
