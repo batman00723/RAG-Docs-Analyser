@@ -51,8 +51,6 @@ from backend.config import settings
 
 class CerebrasLLMService:
     def __init__(self):
-        # 1. Ensure 'cerebras_api_key' is added to your config.py/Settings class
-        # 2. Ensure 'CEREBRAS_API_KEY' is in your .env file
         self.client = Cerebras(api_key=settings.cerebras_api_key.get_secret_value())
         self.model_id ="llama3.1-8b"
 
@@ -69,8 +67,7 @@ class CerebrasLLMService:
 
         # Build the messages list
         messages = [{"role": "system", "content": system_prompt}]
-
-        # Add History: Convert "model" to "assistant" for cerebras to understand
+        # appending chathistort in mesagages which contain system prompt
         if chat_history:
             for msg in chat_history:
                 role = "user" if msg.message_by == "human" else "assistant"
